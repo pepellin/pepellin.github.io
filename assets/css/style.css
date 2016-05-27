@@ -178,7 +178,8 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header.jpg) no-repeat center top;
+	background: #03C9A9;	
+	/*background: url(../img/header.jpg) no-repeat center top;*/
 	padding-top: 180px;
 	text-align:center;
 	background-attachment: relative;
@@ -235,7 +236,8 @@ input {
 
 /* SEP */
 #sep {
-	background: url(../img/sep.jpg) no-repeat center top;
+	background: #2f2f2f;
+	/*background: url(../img/sep.jpg) no-repeat center top;*/
 	padding-top: 90px;
 	text-align:center;
 	background-attachment: relative;
@@ -309,8 +311,8 @@ ul {
 /* SPONSORS */
 #g {
 	background: #f2f2f2;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	/*padding-top: 60px;
+	padding-bottom: 60px;*/
 }
 
 .sponsor img {
