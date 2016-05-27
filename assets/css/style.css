@@ -189,6 +189,7 @@ input {
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 700px;
+	position: relative;
 	width: 100%; 
 	color: white;
 	
