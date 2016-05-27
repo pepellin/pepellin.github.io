@@ -21,7 +21,6 @@
     font-family: 'Lato', sans-serif;
 } 
 body {
-	width: auto; 
 	background: #fff; 
 	margin: 0; 
 	color: #5a5a5a;
@@ -186,7 +185,8 @@ input {
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 700px;
-	width: 100%;
+	/*width: 100%;*/
+	width: auto; 
 	color: white;
 	
     -webkit-background-size: 100%;
