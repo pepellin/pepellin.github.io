@@ -23,7 +23,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -42,16 +42,36 @@
     <!--<script src="assets/js/app.js"></script>-->
   </head>
 
-  <body>
+  <body data-target="#theMenu">
 
+    <!-- Menu -->
+    <nav class="menu" id="theMenu">
+      <div class="menu-wrap">
+        <h1 class="logo"><a href="index.html#home">Pei-Hua Lin</a></h1>
+        <i class="fa fa-times menu-close"></i>
+        <a href="#home" class="smoothScroll">Home</a>
+        <a href="#about" class="smoothScroll">About</a>
+        <a href="#work" class="smoothScroll">Work</a>
+        <a href="#contact" class="smoothScroll">Contact</a>
+        <a href="https://www.linkedin.com/in/pepellin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/pepellin"><i class="fa fa-github"></i></a>
+        <a href="https://facebook.com/pepelpink"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/pepel_lin"><i class="fa fa-twitter"></i></a>
+      </div>
+      
+      <!-- Menu button -->
+      <div id="menuToggle"><i class="fa fa-bars"></i></div>
+    </nav>
+
+    <section id="home" name="home"></section>
     <div id="h">
       <div class="logo">Pei-Hua Lin</div>
-      <div class="social hidden-xs">
+      <!--<div class="social hidden-xs">
         <a href="https://www.linkedin.com/in/pepellin"><i class="ion-social-linkedin"></i></a>
         <a href="https://github.com/pepellin"><i class="ion-social-github"></i></a>
         <a href="https://facebook.com/pepelpink"><i class="ion-social-facebook"></i></a>
         <a href="https://twitter.com/pepel_lin"><i class="ion-social-twitter"></i></a>
-      </div>
+      </div>-->
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 centered">
@@ -61,7 +81,8 @@
         </div><!--/row-->
       </div><!--/container-->
     </div><!-- /H -->
-
+    
+    <section id="about" name="about"></section>  	
     <div class="container ptb">
       <div class="row">
         <div class="col-md-6">
@@ -86,16 +107,17 @@
           <div class="col-md-8 col-md-offset-2">
             <h1>OBJECTIVE</h1>
             <h4>Full-time job opportunity starting at any time in web application development applying analytical abilities, programming, teamwork, and technical skills in front-end design and back-end technology.</h4>
-            <p><a href="#f"><button class="btn btn-conf-2 btn-green">Contact Me</button></a></p>
+            <p><a href="#contact" class="smoothScroll"><button class="btn btn-conf-2 btn-green">Contact Me</button></a></p>
           </div><!--/col-md-8-->
         </div>
       </div>
     </div><!--/sep-->
-
+    
+    <section id="work" name="work"></section>  	
     <div class="container ptb">
       <div class="row">
         <div class="centered col-md-8 col-md-offset-2">
-          <h1>EXPERIENCE</h1>
+          <h1>WORK</h1>
           
         </div>
         <div class="col-md-6 col-sm-12">
@@ -222,11 +244,11 @@
 
     </div><!--/g-->
 
-    <div id="green">
+    <!--<div id="green">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 centered">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
               <!-- Indicators -->
               <!-- Wrapper for slides -->
               <!--<div class="carousel-inner" role="listbox">
@@ -243,13 +265,14 @@
                   <h5><tgr>LISA SMITH</tgr></h5>
                 </div>
               </div>-->
-            </div><!--/Carousel-->
+            <!--</div><!--/Carousel-->
 
-          </div>
+          <!--</div>
         </div><!--/row-->
-      </div><!--/container-->
-    </div><!--/green-->
-
+      <!--</div><!--/container-->
+    <!--</div><!--/green-->
+    
+    <section id="contact" name="contact"></section>  
     <div id="f">
       <div class="row">
         <div class="col-md-12">
@@ -280,6 +303,7 @@
     <!--<script src="assets/js/retina-1.1.0.js"></script>-->
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
         async defer></script> <!--google map-->    
+    <script src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
