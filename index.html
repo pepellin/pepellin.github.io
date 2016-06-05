@@ -25,6 +25,9 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Magnific Popup -->
+    <link href="http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css" rel="stylesheet">
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
@@ -177,21 +180,20 @@
           </p>
         </div>
         <div class="col-md-6 col-sm-12">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <img src="assets/img/4D/org.png" class="img-responsive img-rounded mt" alt="">
-                </div>
+          <div class="popup-gallery" id="mix-container">
+              <!-- Image 1 -->
+              <div class="col-md-10 col-md-offset-1 col-sm-6 col-xs-6 mix">
+                      <a href="assets/img/4D/detail.png">
+                          <img class="img-responsive" src="assets/img/4D/detail.png"><!-- Image 1 source -->
+                      </a>
               </div>
-              <div class="item">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <img src="assets/img/4D/detail.png" class="img-responsive img-rounded mt" alt="">
-                </div>
+              <!-- Image 2 -->
+              <div class="col-md-10 col-md-offset-1 col-sm-6 col-xs-6 mix">
+                      <a href="assets/img/4D/org.png">
+                          <img class="img-responsive" src="assets/img/4D/org.png"><!-- Image 2 source -->
+                      </a>
               </div>
-            </div>
-          </div><!--/Carousel-->
+          </div>
         </div>
       </div><!--/row-->
       <hr>
@@ -299,6 +301,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <!--<script src="assets/js/retina-1.1.0.js"></script>-->
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"

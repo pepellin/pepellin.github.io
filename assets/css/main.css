@@ -1,3 +1,13 @@
+/* work */
+#mix-container {
+    margin: -5px;
+}
+#mix-container .mix {
+    /*display: none;*/
+    padding: 5px;
+}
+
+/* footer */
 #map {
 width: auto;
 height: 350px;
