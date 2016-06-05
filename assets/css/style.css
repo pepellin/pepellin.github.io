@@ -104,7 +104,7 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #1abc9c;
+	color: #03C9A9;
 }
 a:hover,
 a:focus {
@@ -115,6 +115,20 @@ a:focus {
 .nopadding {
 	padding: 0px !important;
 	margin: 0px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  color:#fff;
+  background-color: transparent;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #03C9A9;
+  background-color: transparent;
 }
 
 
@@ -269,12 +283,12 @@ input {
 	letter-spacing: 0.15em;
 	line-height: 40px;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: #808080;
 	margin-top: 20px;
 }
 
 .menu h1.logo a:hover {
-	color: #03C9A9;
+	color: #fff;
 }
 
 .menu img.logo {
@@ -294,7 +308,7 @@ input {
 }
 
 .menu a:hover {
-	color: #03C9A9;
+	color: #fff;
 }
 
 .menu a:active {
@@ -331,7 +345,7 @@ input {
 }
 
 .menu-close:hover {
-	color: #03C9A9;
+	color: #fff;
 	-webkit-transition: all .1s ease-in-out;
 	   -moz-transition: all .1s ease-in-out;
 		-ms-transition: all .1s ease-in-out;

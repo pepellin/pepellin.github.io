@@ -45,17 +45,27 @@
     <!--<script src="assets/js/app.js"></script>-->
   </head>
 
-  <body data-target="#theMenu">
+  <body data-spy="scroll" data-target="#theMenu" data-offset="10">
 
     <!-- Menu -->
     <nav class="menu" id="theMenu">
       <div class="menu-wrap">
         <h1 class="logo"><a href="index.html#home">Pei-Hua Lin</a></h1>
         <i class="fa fa-times menu-close"></i>
-        <a href="#home" class="smoothScroll">Home</a>
-        <a href="#about" class="smoothScroll">About</a>
-        <a href="#work" class="smoothScroll">Work</a>
-        <a href="#contact" class="smoothScroll">Contact</a>
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active">
+              <a href="#home" class="smoothScroll">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="smoothScroll">About</a>
+            </li>
+            <li>
+              <a href="#work" class="smoothScroll">Work</a>
+            </li>
+            <li>
+              <a href="#contact" class="smoothScroll">Contact</a>
+            </li>
+          </ul>
         <a href="https://www.linkedin.com/in/pepellin"><i class="fa fa-linkedin"></i></a>
         <a href="https://github.com/pepellin"><i class="fa fa-github"></i></a>
         <a href="https://facebook.com/pepelpink"><i class="fa fa-facebook"></i></a>
@@ -66,184 +76,188 @@
       <div id="menuToggle"><i class="fa fa-bars"></i></div>
     </nav>
 
-    <section id="home" name="home"></section>
-    <div id="h">
-      <div class="logo">Pei-Hua Lin</div>
-      <!--<div class="social hidden-xs">
-        <a href="https://www.linkedin.com/in/pepellin"><i class="ion-social-linkedin"></i></a>
-        <a href="https://github.com/pepellin"><i class="ion-social-github"></i></a>
-        <a href="https://facebook.com/pepelpink"><i class="ion-social-facebook"></i></a>
-        <a href="https://twitter.com/pepel_lin"><i class="ion-social-twitter"></i></a>
-      </div>-->
-      <div class="container">
+    <section id="home" name="home">
+      <div id="h">
+        <!--<div class="logo">Pei-Hua Lin</div>-->
+        <!--<div class="social hidden-xs">
+          <a href="https://www.linkedin.com/in/pepellin"><i class="ion-social-linkedin"></i></a>
+          <a href="https://github.com/pepellin"><i class="ion-social-github"></i></a>
+          <a href="https://facebook.com/pepelpink"><i class="ion-social-facebook"></i></a>
+          <a href="https://twitter.com/pepel_lin"><i class="ion-social-twitter"></i></a>
+        </div>-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 centered">
+              <h1>Pei-Hua Lin</h1>
+              <h3>focuses on web application development<br> on front-end design and back-end technology.</h3>
+            </div>
+          </div><!--/row-->
+        </div><!--/container-->
+      </div><!-- /H -->
+    </section>
+    
+    <section id="about" name="about">  	
+      <div class="container ptb">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 centered">
-            <h1>Pei-Hua Lin</h1>
-            <h3>focuses on web application development<br> on front-end design and back-end technology.</h3>
+          <div class="col-md-6">
+            <h2>ABOUT ME</h2>
+            <p class="mt">
+                I got my master's degree in Computer Science and Engineering at The Ohio State University in May 2016. Most of my experience are about web application development on both front-end design and back-end technology. I and the team were employing Meteor to create a full stack JavaScript web application for Nationwide Children's Hospital. We did the project under agile methodology and with Git and GitHub as version control tool. Additionally, during my internship in Buckit Media, we made a project management system web application for internal use and an intranet for Wendy's based on mockups.<br><br> 
+                I keep learning and expanding my knowledge. I am also interested in UI/UX, which will improve the interaction between developers and designers. I have made high-definition wireframes and a click-through app prototype with Balsamiq and Flinto, respectively. Finally, I created a user testing plan, conduct the test in a non-lab environment, and wrote a user test report.
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="popup-gallery" id="mix-container">
+                <!-- Image 1 -->
+                <div class="col-md-6 col-sm-6 col-xs-6 mix">
+                        <a href="assets/img/profilePic1.png">
+                            <img class="img-responsive" src="assets/img/profilePic1.png"><!-- Image 1 source -->
+                        </a>
+                </div>
+                <!-- Image 2 -->
+                <div class="col-md-6 col-sm-6 col-xs-6 mix">
+                        <a href="assets/img/profilePic2.png">
+                            <img class="img-responsive" src="assets/img/profilePic2.png"><!-- Image 2 source -->
+                        </a>
+                </div>
+            </div>
           </div>
         </div><!--/row-->
       </div><!--/container-->
-    </div><!-- /H -->
     
-    <section id="about" name="about"></section>  	
-    <div class="container ptb">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>ABOUT ME</h2>
-          <p class="mt">
-              I got my master's degree in Computer Science and Engineering at The Ohio State University in May 2016. Most of my experience are about web application development on both front-end design and back-end technology. I and the team were employing Meteor to create a full stack JavaScript web application for Nationwide Children's Hospital. We did the project under agile methodology and with Git and GitHub as version control tool. Additionally, during my internship in Buckit Media, we made a project management system web application for internal use and an intranet for Wendy's based on mockups.<br><br> 
-              I keep learning and expanding my knowledge. I am also interested in UI/UX, which will improve the interaction between developers and designers. I have made high-definition wireframes and a click-through app prototype with Balsamiq and Flinto, respectively. Finally, I created a user testing plan, conduct the test in a non-lab environment, and wrote a user test report.
-          </p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="popup-gallery" id="mix-container">
-              <!-- Image 1 -->
-              <div class="col-md-6 col-sm-6 col-xs-6 mix">
-                      <a href="assets/img/profilePic1.png">
-                          <img class="img-responsive" src="assets/img/profilePic1.png"><!-- Image 1 source -->
-                      </a>
-              </div>
-              <!-- Image 2 -->
-              <div class="col-md-6 col-sm-6 col-xs-6 mix">
-                      <a href="assets/img/profilePic2.png">
-                          <img class="img-responsive" src="assets/img/profilePic2.png"><!-- Image 2 source -->
-                      </a>
-              </div>
+
+      <div id="sep">
+        <div class="container">
+          <div class="row centered">
+            <div class="col-md-8 col-md-offset-2">
+              <h1>OBJECTIVE</h1>
+              <h4>Full-time job opportunity starting at any time in web application development applying analytical abilities, programming, teamwork, and technical skills in front-end design and back-end technology.</h4>
+              <p><a href="#contact" class="smoothScroll"><button class="btn btn-conf-2 btn-green">Contact Me</button></a></p>
+            </div><!--/col-md-8-->
           </div>
         </div>
-      </div><!--/row-->
-    </div><!--/container-->
-
-    <div id="sep">
-      <div class="container">
-        <div class="row centered">
-          <div class="col-md-8 col-md-offset-2">
-            <h1>OBJECTIVE</h1>
-            <h4>Full-time job opportunity starting at any time in web application development applying analytical abilities, programming, teamwork, and technical skills in front-end design and back-end technology.</h4>
-            <p><a href="#contact" class="smoothScroll"><button class="btn btn-conf-2 btn-green">Contact Me</button></a></p>
-          </div><!--/col-md-8-->
-        </div>
-      </div>
-    </div><!--/sep-->
+      </div><!--/sep-->
+    </section>
     
-    <section id="work" name="work"></section>  	
-    <div class="container ptb">
-      <div class="row">
-        <div class="centered col-md-8 col-md-offset-2">
-          <h1>WORK</h1>
-          
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <h2>Smoking Cessation Application Prototype</h2>
-          <h4>ACCAD, The Ohio State University</h4>
-          <p class="mt">
-            MyQuit Diary is a cell phone application developed to provide smokers the abilities to share their diaries with friends, record the progress, and see the achievement in order to assist them to quit the habit. Users are able to create diaries with images and text. They can like each others' posts and leave comments as encouragement. Moreover, users can track how many times they have smoked or resisted. The app will forbid users reading new comments temporarily as punishment if they smoked too much. MyQuit Diary also provides the ability to link with other social media accounts.<br><br>
+    <section id="work" name="work">  	
+      <div class="container ptb">
+        <div class="row">
+          <div class="centered col-md-8 col-md-offset-2">
+            <h1>WORK</h1>
+            
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h2>Smoking Cessation Application Prototype</h2>
+            <h4>ACCAD, The Ohio State University</h4>
+            <p class="mt">
+              MyQuit Diary is a cell phone application developed to provide smokers the abilities to share their diaries with friends, record the progress, and see the achievement in order to assist them to quit the habit. Users are able to create diaries with images and text. They can like each others' posts and leave comments as encouragement. Moreover, users can track how many times they have smoked or resisted. The app will forbid users reading new comments temporarily as punishment if they smoked too much. MyQuit Diary also provides the ability to link with other social media accounts.<br><br>
 
-            After a prototype of the application was built, I conducted a usability test with Flinto which allows people to test the prototype on a real device. During the test, the subject was asked to complete five tasks in a sequence in the application. The interaction between their finger and the screen was video-recorded for later analysis. A few questions based on their experience were also asked to get a sense of their satisfactions and expectations.
-          </p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="popup-gallery" id="mix-container">
-              <!-- Image 1 -->
-              <div class="col-md-4 col-md-offset-2 col-sm-3 col-xs-3 mix">
-                      <a href="assets/img/myQuit1.png">
-                          <img class="img-responsive" src="assets/img/myQuit1.png"><!-- Image 1 source -->
-                      </a>
-              </div>
-              <!-- Image 2 -->
-              <div class="col-md-4 col-sm-3 col-xs-3 mix">
-                      <a href="assets/img/myQuit2.png">
-                          <img class="img-responsive" src="assets/img/myQuit2.png"><!-- Image 2 source -->
-                      </a>
-              </div>
-              <!-- Image 3 -->
-              <div class="col-md-4 col-md-offset-2 col-sm-3 col-xs-3 mix">
-                      <a href="assets/img/myQuit3.png">
-                          <img class="img-responsive" src="assets/img/myQuit3.png"><!-- Image 3 source -->
-                      </a>
-              </div>
-              <!-- Image 4 -->
-              <div class="col-md-4 col-sm-3 col-xs-3 mix">
-                      <a href="assets/img/myQuit4.png">
-                          <img class="img-responsive" src="assets/img/myQuit4.png"><!-- Image 4 source -->
-                      </a>
-              </div>
+              After a prototype of the application was built, I conducted a usability test with Flinto which allows people to test the prototype on a real device. During the test, the subject was asked to complete five tasks in a sequence in the application. The interaction between their finger and the screen was video-recorded for later analysis. A few questions based on their experience were also asked to get a sense of their satisfactions and expectations.
+            </p>
           </div>
-        </div>
-      </div><!--/row-->
-      <hr>
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <h2>4D-Project Management System</h2>
-          <h4>Buckit Media, Columbus, Ohio</h4>
-          <p class="mt">
-            I participated in couple projects during my internship in Buckit Media. 4D, a project management system, is an internal web application hosted on SharePoint Server for team organization, task assignment, file sharing and discussion board. I mainly took charge of the implementation of CRUD operations using AngularJS. I also took part in developing organization overview and project details pages based on designer mockups. Other projects are listed below.<br><br>
-            <strong>University of Findlay</strong><br>
-              Created forms using Nintex Forms and built Nintex Workflow on SharePoint.<br>
-              <strong>Wendy’s</strong><br>
-              Implemented a responsive intranet based on mockups.<br>
-              <strong>Adoption Circle</strong>
-              Created site columns, content types, and lists based on the relationship from Visio Diagrams.
-          </p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="popup-gallery" id="mix-container">
-              <!-- Image 1 -->
-              <div class="col-md-10 col-md-offset-1 col-sm-6 col-xs-6 mix">
-                      <a href="assets/img/fourD1.png">
-                          <img class="img-responsive" src="assets/img/fourD1.png"><!-- Image 1 source -->
-                      </a>
-              </div>
-              <!-- Image 2 -->
-              <div class="col-md-10 col-md-offset-1 col-sm-6 col-xs-6 mix">
-                      <a href="assets/img/fourD2.png">
-                          <img class="img-responsive" src="assets/img/fourD2.png"><!-- Image 2 source -->
-                      </a>
-              </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="popup-gallery" id="mix-container">
+                <!-- Image 1 -->
+                <div class="col-md-4 col-md-offset-2 col-sm-3 col-xs-3 mix">
+                        <a href="assets/img/myQuit1.png">
+                            <img class="img-responsive" src="assets/img/myQuit1.png"><!-- Image 1 source -->
+                        </a>
+                </div>
+                <!-- Image 2 -->
+                <div class="col-md-4 col-sm-3 col-xs-3 mix">
+                        <a href="assets/img/myQuit2.png">
+                            <img class="img-responsive" src="assets/img/myQuit2.png"><!-- Image 2 source -->
+                        </a>
+                </div>
+                <!-- Image 3 -->
+                <div class="col-md-4 col-md-offset-2 col-sm-3 col-xs-3 mix">
+                        <a href="assets/img/myQuit3.png">
+                            <img class="img-responsive" src="assets/img/myQuit3.png"><!-- Image 3 source -->
+                        </a>
+                </div>
+                <!-- Image 4 -->
+                <div class="col-md-4 col-sm-3 col-xs-3 mix">
+                        <a href="assets/img/myQuit4.png">
+                            <img class="img-responsive" src="assets/img/myQuit4.png"><!-- Image 4 source -->
+                        </a>
+                </div>
+            </div>
           </div>
-        </div>
-      </div><!--/row-->
-      <hr>
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <h2>Rehab on the Go</h2>
-          <h4>Nationwide Children's Hospital, Columbus, Ohio</h4>
-          <p class="mt">
-            My capstone group teamed up with Nationwide Children's Hospital to implement a system to make rehabilitation for injured athletes easier. My role was main client contact and developer.<br><br> 
+        </div><!--/row-->
+        <hr>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2>4D-Project Management System</h2>
+            <h4>Buckit Media, Columbus, Ohio</h4>
+            <p class="mt">
+              I participated in couple projects during my internship in Buckit Media. 4D, a project management system, is an internal web application hosted on SharePoint Server for team organization, task assignment, file sharing and discussion board. I mainly took charge of the implementation of CRUD operations using AngularJS. I also took part in developing organization overview and project details pages based on designer mockups. Other projects are listed below.<br><br>
+              <strong>University of Findlay</strong><br>
+                Created forms using Nintex Forms and built Nintex Workflow on SharePoint.<br>
+                <strong>Wendy’s</strong><br>
+                Implemented a responsive intranet based on mockups.<br>
+                <strong>Adoption Circle</strong>
+                Created site columns, content types, and lists based on the relationship from Visio Diagrams.
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="popup-gallery" id="mix-container">
+                <!-- Image 1 -->
+                <div class="col-md-10 col-md-offset-1 col-sm-6 col-xs-6 mix">
+                        <a href="assets/img/fourD1.png">
+                            <img class="img-responsive" src="assets/img/fourD1.png"><!-- Image 1 source -->
+                        </a>
+                </div>
+                <!-- Image 2 -->
+                <div class="col-md-10 col-md-offset-1 col-sm-6 col-xs-6 mix">
+                        <a href="assets/img/fourD2.png">
+                            <img class="img-responsive" src="assets/img/fourD2.png"><!-- Image 2 source -->
+                        </a>
+                </div>
+            </div>
+          </div>
+        </div><!--/row-->
+        <hr>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2>Rehab on the Go</h2>
+            <h4>Nationwide Children's Hospital, Columbus, Ohio</h4>
+            <p class="mt">
+              My capstone group teamed up with Nationwide Children's Hospital to implement a system to make rehabilitation for injured athletes easier. My role was main client contact and developer.<br><br> 
 
-            We designed content management system for trainers to create and store reusable exercises and plans. The app also supports uploads of media such as pictures or documents. Moreover, we implemented roles and permissions. For example, trainers can create patients assigned to themselves, admins can create and manage all user roles. Last but not the least, our goal was to provide an intuitive experience for both trainers and patients.  To accomplish this, we strived to make common features visible and accessible, as well as make use of familiar UI patterns.
-          </p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="popup-gallery" id="mix-container">
-              <!-- Image 1 -->
-              <div class="col-md-6 col-sm-6 col-xs-6 mix">
-                      <a href="assets/img/rotg1.png">
-                          <img class="img-responsive" src="assets/img/rotg1.png"><!-- Image 1 source -->
-                      </a>
-              </div>
-              <!-- Image 2 -->
-              <div class="col-md-6 col-sm-6 col-xs-6 mix">
-                      <a href="assets/img/rotg2.png">
-                          <img class="img-responsive" src="assets/img/rotg2.png"><!-- Image 2 source -->
-                      </a>
-              </div>
-              <!-- Image 3 -->
-              <div class="col-md-6 col-sm-6 col-xs-6 mix">
-                      <a href="assets/img/rotg3.png">
-                          <img class="img-responsive" src="assets/img/rotg3.png"><!-- Image 3 source -->
-                      </a>
-              </div>
-              <!-- Image 4 -->
-              <div class="col-md-6 col-sm-6 col-xs-6 mix">
-                      <a href="assets/img/rotg4.png">
-                          <img class="img-responsive" src="assets/img/rotg4.png"><!-- Image 4 source -->
-                      </a>
-              </div>
+              We designed content management system for trainers to create and store reusable exercises and plans. The app also supports uploads of media such as pictures or documents. Moreover, we implemented roles and permissions. For example, trainers can create patients assigned to themselves, admins can create and manage all user roles. Last but not the least, our goal was to provide an intuitive experience for both trainers and patients.  To accomplish this, we strived to make common features visible and accessible, as well as make use of familiar UI patterns.
+            </p>
           </div>
-        </div>
-      </div><!--/row-->
-    </div><!--/container-->
+          <div class="col-md-6 col-sm-12">
+            <div class="popup-gallery" id="mix-container">
+                <!-- Image 1 -->
+                <div class="col-md-6 col-sm-6 col-xs-6 mix">
+                        <a href="assets/img/rotg1.png">
+                            <img class="img-responsive" src="assets/img/rotg1.png"><!-- Image 1 source -->
+                        </a>
+                </div>
+                <!-- Image 2 -->
+                <div class="col-md-6 col-sm-6 col-xs-6 mix">
+                        <a href="assets/img/rotg2.png">
+                            <img class="img-responsive" src="assets/img/rotg2.png"><!-- Image 2 source -->
+                        </a>
+                </div>
+                <!-- Image 3 -->
+                <div class="col-md-6 col-sm-6 col-xs-6 mix">
+                        <a href="assets/img/rotg3.png">
+                            <img class="img-responsive" src="assets/img/rotg3.png"><!-- Image 3 source -->
+                        </a>
+                </div>
+                <!-- Image 4 -->
+                <div class="col-md-6 col-sm-6 col-xs-6 mix">
+                        <a href="assets/img/rotg4.png">
+                            <img class="img-responsive" src="assets/img/rotg4.png"><!-- Image 4 source -->
+                        </a>
+                </div>
+            </div>
+          </div>
+        </div><!--/row-->
+      </div><!--/container-->
+    </section>
 
     <div id="g">
 
@@ -277,28 +291,29 @@
       <!--</div><!--/container-->
     <!--</div><!--/green-->
     
-    <section id="contact" name="contact"></section>  
-    <div id="f">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="map"></div>
+    <section id="contact" name="contact">  
+      <div id="f">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="map"></div>
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row centered">
-          <h2>Contact Me</h2>
-          <h4><a href="mailto:pepelpink927@gmail.com">pepelpink927@gmail.com</a></h5>
+        <div class="container">
+          <div class="row centered">
+            <h2>Contact Me</h2>
+            <h4><a href="mailto:pepelpink927@gmail.com">pepelpink927@gmail.com</a></h5>
 
-          <p class="mt">
-        <a href="https://www.linkedin.com/in/pepellin"><i class="ion-social-linkedin"></i></a>
-        <a href="https://github.com/pepellin"><i class="ion-social-github"></i></a>
-        <a href="https://facebook.com/pepelpink"><i class="ion-social-facebook"></i></a>
-        <a href="https://twitter.com/pepel_lin"><i class="ion-social-twitter"></i></a>
-          </p>
-          <h6 class="mt">COPYRIGHT 2016 - PEI-HUA LIN</h6>
-        </div><!--/row-->
-      </div><!--/container-->
-    </div><!--/F-->
+            <p class="mt">
+          <a href="https://www.linkedin.com/in/pepellin"><i class="ion-social-linkedin"></i></a>
+          <a href="https://github.com/pepellin"><i class="ion-social-github"></i></a>
+          <a href="https://facebook.com/pepelpink"><i class="ion-social-facebook"></i></a>
+          <a href="https://twitter.com/pepel_lin"><i class="ion-social-twitter"></i></a>
+            </p>
+            <h6 class="mt">COPYRIGHT 2016 - PEI-HUA LIN</h6>
+          </div><!--/row-->
+        </div><!--/container-->
+      </div><!--/F-->
+    </section>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
