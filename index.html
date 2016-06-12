@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" ng-app="portfolioApp">
   <head>        
     <meta charset="utf-8">
@@ -76,25 +76,23 @@
       <div id="menuToggle"><i class="fa fa-bars"></i></div>
     </nav>
 
-    <section id="home" name="home">
-      <header>
-        <!--<div class="logo">Pei-Hua Lin</div>-->
-        <!--<div class="social hidden-xs">
-          <a href="https://www.linkedin.com/in/pepellin"><i class="ion-social-linkedin"></i></a>
-          <a href="https://github.com/pepellin"><i class="ion-social-github"></i></a>
-          <a href="https://facebook.com/pepelpink"><i class="ion-social-facebook"></i></a>
-          <a href="https://twitter.com/pepel_lin"><i class="ion-social-twitter"></i></a>
-        </div>-->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 centered">
-              <h1>Pei-Hua Lin</h1>
-              <h3>focuses on web application development<br> on front-end design and back-end technology.</h3>
-            </div>
-          </div><!--/row-->
-        </div><!--/container-->
-      </header><!-- /H -->
-    </section>
+    <header id="home" name="home">
+      <!--<div class="logo">Pei-Hua Lin</div>-->
+      <!--<div class="social hidden-xs">
+        <a href="https://www.linkedin.com/in/pepellin"><i class="ion-social-linkedin"></i></a>
+        <a href="https://github.com/pepellin"><i class="ion-social-github"></i></a>
+        <a href="https://facebook.com/pepelpink"><i class="ion-social-facebook"></i></a>
+        <a href="https://twitter.com/pepel_lin"><i class="ion-social-twitter"></i></a>
+      </div>-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 centered">
+            <h1>Pei-Hua Lin</h1>
+            <h3>focuses on web application development<br> on front-end design and back-end technology.</h3>
+          </div>
+        </div><!--/row-->
+      </div><!--/container-->
+    </header>
     
     <section id="about" name="about">  	
       <div class="container ptb">
@@ -141,7 +139,7 @@
     
     <section id="work" name="work">  	
       <div class="container ptb">
-        <div class="row">
+        <section class="row">
           <div class="centered col-md-8 col-md-offset-2">
             <h1>WORK</h1>
             
@@ -189,9 +187,9 @@
                 </div>
             </div>
           </div>
-        </div><!--/row-->
+        </section><!--/row-->
         <hr>
-        <div class="row">
+        <section class="row">
           <div class="col-md-6 col-sm-12">
             <h2>4D-Project Management System</h2>
             <h4>Buckit Media, Columbus, Ohio</h4>
@@ -228,9 +226,9 @@
                 </div>
             </div>
           </div>
-        </div><!--/row-->
+        </section><!--/row-->
         <hr>
-        <div class="row">
+        <section class="row">
           <div class="col-md-6 col-sm-12">
             <h2>Rehab on the Go</h2>
             <h4>Nationwide Children's Hospital, Columbus, Ohio</h4>
@@ -278,7 +276,7 @@
                 </div>
             </div>
           </div>
-        </div><!--/row-->
+        </section><!--/row-->
       </div><!--/container-->
     </section>
 
@@ -314,29 +312,27 @@
       <!--</div><!--/container-->
     <!--</div><!--/green-->
     
-    <section id="contact" name="contact">  
-      <footer>
-        <div class="row">
-          <div class="col-md-12">
-            <div id="map"></div>
-          </div>
+    <footer  id="contact" name="contact">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="map"></div>
         </div>
-        <div class="container">
-          <div class="row centered">
-            <h2>Contact Me</h2>
-            <h4><a href="mailto:pepelpink927@gmail.com">pepelpink927@gmail.com</a></h5>
+      </div>
+      <div class="container">
+        <div class="row centered">
+          <h2>Contact Me</h2>
+          <h4><a href="mailto:pepelpink927@gmail.com">pepelpink927@gmail.com</a></h5>
 
-            <p class="mt">
-          <a href="https://www.linkedin.com/in/pepellin" target="_blank"><i class="ion-social-linkedin"></i></a>
-          <a href="https://github.com/pepellin" target="_blank"><i class="ion-social-github"></i></a>
-          <a href="https://facebook.com/pepelpink" target="_blank"><i class="ion-social-facebook"></i></a>
-          <a href="https://twitter.com/pepel_lin" target="_blank"><i class="ion-social-twitter"></i></a>
-            </p>
-            <h6 class="mt">COPYRIGHT 2016 - PEI-HUA LIN</h6>
-          </div><!--/row-->
-        </div><!--/container-->
-      </footer><!--/F-->
-    </section>
+          <p class="mt">
+        <a href="https://www.linkedin.com/in/pepellin" target="_blank"><i class="ion-social-linkedin"></i></a>
+        <a href="https://github.com/pepellin" target="_blank"><i class="ion-social-github"></i></a>
+        <a href="https://facebook.com/pepelpink" target="_blank"><i class="ion-social-facebook"></i></a>
+        <a href="https://twitter.com/pepel_lin" target="_blank"><i class="ion-social-twitter"></i></a>
+          </p>
+          <h6 class="mt">COPYRIGHT 2016 - PEI-HUA LIN</h6>
+        </div><!--/row-->
+      </div><!--/container-->
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
