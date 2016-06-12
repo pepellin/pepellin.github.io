@@ -195,7 +195,7 @@ input {
 }
 
 /* HEADER SECTION */
-#h {
+header {
 	background: #03C9A9;	
 	background: -webkit-linear-gradient(#03C9A9, #9dfbec); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#03C9A9, #9dfbec); /* For Opera 11.1 to 12.0 */
@@ -222,7 +222,7 @@ input {
     background-size: cover;
 }
 
-#h .logo {
+header .logo {
 	top: 30px;
 	left: 45px;
 	font-size: 18px;
@@ -230,22 +230,22 @@ input {
 	position:absolute; 
 }
 
-#h .social {
+header .social {
 	top: 30px;
 	right: 45px;
 	font-size: 20px;
 	position: absolute;
 }
 
-#h .social i {
+header .social i {
 	margin-left: 20px;
 }
 
-#h .social a {
+header .social a {
 	color: white;
 }
 
-#h h1 {
+header h1 {
 	font-weight: 700;
 	color: white;
 	font-size: 40px;
@@ -527,27 +527,27 @@ ul {
 }
 
 /* FOOTER */
-#f {
+footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background: #2f2f2f;
 	color: white;
 }
 
-#f h5 {
+footer h5 {
 	margin-top: 30px;
 	letter-spacing: 1px;
 }
 
-#f i {
+footer i {
 	font-size: 45px;
 	margin: 15px;
 }
 
-#f a {
+footer a {
 	color: #b9b9b9;
 }
 
-#f a:hover {
+footer a:hover {
 	color: #03C9A9;
 }
