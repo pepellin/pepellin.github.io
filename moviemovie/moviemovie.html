@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="movieApp">
     <head>
         <!-- Standard Meta -->
         <meta charset="utf-8" />
@@ -40,6 +40,9 @@
         </nav>
         <!-- Page Content -->
         <div class="container">
+            <section id="home" name="home">
+                
+            </section>
             <section id="popular" name="popular">
                 <!-- Page Header -->
                 <div class="row">
@@ -53,7 +56,8 @@
 
                 <!-- Projects Row -->
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-6 portfolio-item">
+                    <pmovie-list></pmovie-list>
+                    <!--<div class="col-md-3 col-sm-6 col-xs-6 portfolio-item">
                         <a href="#">
                             <img class="img-responsive" src="http://placehold.it/700x400" alt="">
                         </a>
@@ -88,7 +92,7 @@
                             <a href="#">Project Name</a>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
+                    </div>-->
                 </div>
                 <!-- /.row -->
             </section>
@@ -301,5 +305,9 @@
         <script src="../assets/js/jquery.js"></script>
         <script src="../assets/js/bootstrap.js"></script>
         <script src="../assets/js/smoothscroll.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="assets/app/app.module.js"></script>
+        <script src="assets/app/pmovie-list/pmovie-list.module.js"></script>   
+        <script src="assets/app/pmovie-list/pmovie-list.component.js"></script>
     </body>
 </html>
