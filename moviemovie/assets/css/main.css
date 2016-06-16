@@ -31,7 +31,11 @@ button.navbar-toggle {
 }
 
 .navbar-inverse .navbar-nav > .active > a{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 section {
