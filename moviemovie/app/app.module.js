@@ -1,3 +1,5 @@
 angular.module('movieApp', [
-  'pmovieList'
+  'ngRoute',
+  'pmovieList',
+  'pmovieDetail'
 ]);

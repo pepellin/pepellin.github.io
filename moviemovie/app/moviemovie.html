@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta name="author" content="Pei-Hua Lin" />
         <title>Movie Movie</title>
-        <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
     </head>
     <body data-spy="scroll" data-target="#theMenu" data-offset="20">
         <nav class="navbar navbar-inverse navbar-fixed-top" id="theMenu">
@@ -63,8 +63,8 @@
                 <!-- /.row -->
 
                 <!-- Projects Row -->
-                <div class="row">
-                    <pmovie-list></pmovie-list>
+                <div class="row" ng-view>
+                    <!--<pmovie-list></pmovie-list>-->
                     <!--<div class="col-md-3 col-sm-6 col-xs-6 portfolio-item">
                         <a href="#">
                             <img class="img-responsive" src="http://placehold.it/700x400" alt="">
@@ -283,15 +283,16 @@
 
         </div>
         <!-- /.container -->        
-        <script src="../assets/js/jquery.js"></script>
-        <script src="../assets/js/bootstrap.js"></script>
-        <script src="../assets/js/smoothscroll.js"></script>
-        <script src="angular/angular.js"></script>
-        <script src="angular/angular-route.js"></script>
-        <script src="app/app.module.js"></script>
-        <script src="app/pmovie-list/pmovie-list.module.js"></script>   
-        <script src="app/pmovie-list/pmovie-list.component.js"></script>
-        <script src="app/pmovie-detail/pmovie-detail.module.js"></script>
-        <script src="app/pmovie-detail/pmovie-detail.component.js"></script>
+        <script src="../../assets/js/jquery.js"></script>
+        <script src="../../assets/js/bootstrap.js"></script>
+        <script src="../../assets/js/smoothscroll.js"></script>
+        <script src="../angular/angular.js"></script>
+        <script src="../angular/angular-route.js"></script>
+        <script src="app.module.js"></script>
+        <script src="app.config.js"></script>
+        <script src="pmovie-list/pmovie-list.module.js"></script>   
+        <script src="pmovie-list/pmovie-list.component.js"></script>
+        <script src="pmovie-detail/pmovie-detail.module.js"></script>
+        <script src="pmovie-detail/pmovie-detail.component.js"></script>
     </body>
 </html>
