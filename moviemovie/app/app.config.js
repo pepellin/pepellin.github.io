@@ -6,7 +6,7 @@ angular.
 
       $routeProvider.
         when('/', {
-          template: '<pmovie-list></pmovie-list>'
+          templateUrl: 'moviemovie.html'
         }).
         when('/pmovies/:id', {
           template: '<pmovie-detail></pmovie-detail>'
