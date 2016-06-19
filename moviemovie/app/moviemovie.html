@@ -27,10 +27,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#home" class="smoothScroll">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="#popular" class="smoothScroll">Popular</a></li>
-                <li><a href="#topRated" class="smoothScroll">Top Rated</a></li>
-                <li><a href="#upcoming" class="smoothScroll">Upcoming</a></li>
                 <li><a href="#nowPlaying" class="smoothScroll">Now Playing</a></li>
+                <li><a href="#upcoming" class="smoothScroll">Upcoming</a></li>
+                <li><a href="#topRated" class="smoothScroll">Top Rated</a></li>
+                <li><a href="#popular" class="smoothScroll">Popular</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="../index.html">About Me</a></li>
@@ -51,11 +51,11 @@
                 </div>
                 <!-- /.row -->
             </section>
-            <section id="popular" name="popular">
+            <section id="nowPlaying" name="nowPlaying">
                 <!-- Page Header -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Popular
+                        <h1 class="page-header">Now Playing
                             <small>Secondary Text</small>
                         </h1>
                     </div>
@@ -64,29 +64,10 @@
 
                 <!-- Projects Row -->
                 <div class="row">
-                    <pmovie-list></pmovie-list>
+                    <nmovie-list></nmovie-list>
                 </div>
                 <!-- /.row -->
             </section>
-
-            <section id="topRated" name="topRated">
-                <!-- Page Header -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Top Rated
-                            <small>Secondary Text</small>
-                        </h1>
-                    </div>
-                </div>
-                <!-- /.row -->
-
-                <!-- Projects Row -->
-                <div class="row">
-                    <tmovie-list></tmovie-list>
-                </div>
-                <!-- /.row -->
-            </section>
-            
             <section id="upcoming" name="upcoming">
                 <!-- Page Header -->
                 <div class="row">
@@ -104,25 +85,40 @@
                 </div>
                 <!-- /.row -->
             </section>
-
-            <section id="nowPlaying" name="nowPlaying">
+            <section id="topRated" name="topRated">
                 <!-- Page Header -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Now Playing
+                        <h1 class="page-header">Top Rated
                             <small>Secondary Text</small>
                         </h1>
                     </div>
                 </div>
                 <!-- /.row -->
 
-            <!-- Projects Row -->
-            <div class="row">
-                <nmovie-list></nmovie-list>
-            </div>
-            <!-- /.row -->
-        </section>
+                <!-- Projects Row -->
+                <div class="row">
+                    <tmovie-list></tmovie-list>
+                </div>
+                <!-- /.row -->
+            </section>
+            <section id="popular" name="popular">
+                <!-- Page Header -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Popular
+                            <small>Secondary Text</small>
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
 
+                <!-- Projects Row -->
+                <div class="row">
+                    <pmovie-list></pmovie-list>
+                </div>
+                <!-- /.row -->
+            </section>
             <hr>
 
             <!-- Pagination -->

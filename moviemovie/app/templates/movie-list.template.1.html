@@ -1,6 +1,6 @@
 <div class="col-md-2 col-sm-2 col-xs-3 portfolio-item" ng-repeat="movie in $ctrl.movies | orderBy:$ctrl.orderProp">
     <div class="hovereffect">
-        <a ng-href="moviemovie.html#!/movies/{{movie.id}}">
+        <a ng-href="moviemovie.html#!/movies/{{movie.id}}" title="{{movie.title}}" alt="{{movie.title}}">
             <img class="img-responsive movie-img" ng-src="http://image.tmdb.org/t/p/w370/{{movie.poster_path}}" alt="{{movie.title}}" />
             <div class="overlay">
                 <h2>{{movie.title}}<br/>
