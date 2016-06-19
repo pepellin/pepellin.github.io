@@ -6,10 +6,10 @@ angular.
 
       $routeProvider.
         when('/', {
-          templateUrl: 'moviemovie.html'
+          templateUrl: 'templates/movie-list.template.html'
         }).
-        when('/pmovies/:id', {
-          template: '<pmovie-detail></pmovie-detail>'
+        when('/movies/:id', {
+          template: '<movie-detail></movie-detail>'
         }).
         otherwise('/');
     }
