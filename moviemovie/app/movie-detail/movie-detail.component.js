@@ -1,12 +1,18 @@
-function MovieDetailController($routeParams) {
-  this.movieId = $routeParams.id;
+function MovieDetailController($routeParams, $http) {
+  var self = this;
+  self.movieId = $routeParams.id;
+  var movieUrl = 'https://api.themoviedb.org/3/movie/' + self.movieId +'?api_key=2d2ec1c3a401007b7c59f97960889607';
+  $http.get(movieUrl).then(function(response) {
+    self.movieInfo = response.data;
+    console.log(self.movieId + self.movieInfo);
+  });
 }
 
 angular.
   module('movieDetail').
   component('movieDetail', {
     templateUrl: 'templates/movie-detail.template.html',
-    controller: ['$routeParams', MovieDetailController]
+    controller: ['$routeParams', '$http', MovieDetailController]
   });
 
 //   function NmovieListController($http) {
