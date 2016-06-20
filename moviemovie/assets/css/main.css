@@ -135,3 +135,7 @@ div .portfolio-item {
 .headline h2 {
     font-size: 2em;
 }
+
+.vote-count {
+    float: right;
+}
