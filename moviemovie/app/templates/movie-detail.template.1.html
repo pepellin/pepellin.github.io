@@ -1,0 +1,66 @@
+<!-- Full Width Image Header -->
+<header class="header-image">
+    <div class="headline">
+        <div class="container">
+            <h1>{{$ctrl.movieInfo.title}}</h1>
+            <h2 class="quote">{{$ctrl.movieInfo.tagline}}</h2>
+        </div>
+    </div>
+</header>
+<!-- Movie Info -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                {{$ctrl.movieInfo.title}}
+            </h1>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 movie-info">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+            </div> 
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 movie-info">
+            <table class="table table-hover no-thead">
+                <thead class="thead-default">
+                    <tr>
+                    <th colspan="2">
+                        <span class="vote-average">{{$ctrl.movieInfo.vote_average}} / 10</span>
+                        <span class="vote-count">{{$ctrl.movieInfo.vote_count | number}} votes</span>
+                    </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <th scope="row">Overview</th>
+                    <td>{{$ctrl.movieInfo.overview}}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Genres</th>
+                    <td><ul class="no-style"><li ng-repeat="genre in $ctrl.movieInfo.genres">{{genre.name}}</li></ul></td>
+                    </tr>
+                    <tr>
+                    <tr>
+                    <th scope="row">Homeage</th>
+                    <td><a ng-href="{{$ctrl.movieInfo.homepage}}" target="_blank">{{$ctrl.movieInfo.homepage}}</a></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Language</th>
+                    <td>{{$ctrl.movieInfo.original_language}}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Production Company</th>
+                    <td><ul class="no-style"><li ng-repeat="company in $ctrl.movieInfo.production_companies">{{company.name}}</li></ul></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Production Country</th>
+                    <td>US</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Release Date</th>
+                    <td>{{$ctrl.movieInfo.release_date}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

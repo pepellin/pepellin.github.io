@@ -9,7 +9,7 @@ angular.
           templateUrl: 'templates/movie-list.template.html'
         }).
         when('/movies/:id', {
-          template: '<movie-detail></movie-detail>'
+          templateUrl: 'templates/movie-detail.template.html'
         }).
         otherwise('/');
     }
