@@ -5,6 +5,5 @@ angular.module('movieApp', [
   'tmovieList',
   'umovieList',
   'nmovieList',
-  'movieDetail',
-  'movieBackdrop'
+  'movieDetail'
 ]);
