@@ -2,8 +2,8 @@
 <header class="header-image">
     <div class="headline">
         <div class="container">
-            <h1>Title</h1>
-            <h2>Tagline</h2>
+            <h1>{{$ctrl.movieInfo.title}}</h1>
+            <h2 class="quote">{{$ctrl.movieInfo.tagline}}</h2>
         </div>
     </div>
 </header>
@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">
-                Welcome to Modern Business
+                {{$ctrl.movieInfo.title}}
             </h1>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 movie-info">
@@ -24,32 +24,32 @@
             <table class="table table-hover no-thead">
                 <thead class="thead-default">
                     <tr>
-                    <th colspan="2"><span class="vote-average">Vote Average / 10</span><span class="vote-count">Vote Count</span></th>
+                    <th colspan="2">
+                        <span class="vote-average">{{$ctrl.movieInfo.vote_average}} / 10</span>
+                        <span class="vote-count">{{$ctrl.movieInfo.vote_count | number}} votes</span>
+                    </th>
                     </tr>
                 </thead>
                 <tbody>
                     <th scope="row">Overview</th>
-                    <td>Determined to prove herself, 
-                        Officer Judy Hopps, the first bunny on Zootopia's police force, 
-                        jumps at the chance to crack her first case - 
-                        even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.</td>
+                    <td>{{$ctrl.movieInfo.overview}}</td>
                     </tr>
                     <tr>
                     <th scope="row">Genres</th>
-                    <td>xxx, xxxxxx, xxxx</td>
+                    <td><ul class="no-style"><li ng-repeat="genre in $ctrl.movieInfo.genres">{{genre.name}}</li></ul></td>
                     </tr>
                     <tr>
                     <tr>
                     <th scope="row">Homeage</th>
-                    <td>http://linkToTheMovie.com</td>
+                    <td><a ng-href="{{$ctrl.movieInfo.homepage}}" target="_blank">{{$ctrl.movieInfo.homepage}}</a></td>
                     </tr>
                     <tr>
                     <th scope="row">Language</th>
-                    <td>en</td>
+                    <td>{{$ctrl.movieInfo.original_language}}</td>
                     </tr>
                     <tr>
                     <th scope="row">Production Company</th>
-                    <td>Walt Disney Pictures</td>
+                    <td><ul class="no-style"><li ng-repeat="company in $ctrl.movieInfo.production_companies">{{company.name}}</li></ul></td>
                     </tr>
                     <tr>
                     <th scope="row">Production Country</th>
@@ -57,19 +57,18 @@
                     </tr>
                     <tr>
                     <th scope="row">Release Date</th>
-                    <td>xx/xx/xxxx</td>
+                    <td>{{$ctrl.movieInfo.release_date}}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 </div>
-TBD: Detail view for <span>{{$ctrl.movieId}}</span>
 <div class="container">
     <!-- Picture Section -->
     <div class="row">
         <div class="col-lg-12">
-            <h2 class="page-header">Portfolio Heading</h2>
+            <h1 class="page-header">Backdrops</h1>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-6">
             <a href="portfolio-item.html">
@@ -109,7 +108,7 @@ TBD: Detail view for <span>{{$ctrl.movieId}}</span>
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h2 class="page-header">Reviews</h2>
+            <h1 class="page-header">Reviews</h1>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12">
             <h4>Review Author 1</h4>

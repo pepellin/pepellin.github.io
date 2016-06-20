@@ -4,7 +4,6 @@ function MovieDetailController($routeParams, $http) {
   var movieUrl = 'https://api.themoviedb.org/3/movie/' + self.movieId +'?api_key=2d2ec1c3a401007b7c59f97960889607';
   $http.get(movieUrl).then(function(response) {
     self.movieInfo = response.data;
-    console.log(self.movieId + self.movieInfo);
   });
 }
 
