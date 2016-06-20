@@ -10,7 +10,6 @@ function MovieReviewController($routeParams, $http) {
 angular.
   module('movieReview').
   component('movieReview', {
-    templateUrl: 'templates/movie-detail.template.2.html',
-    // template: '{{$ctrl.movieReviews}}',
+    templateUrl: 'templates/movie-detail.template.3.html',
     controller: ['$routeParams', '$http', MovieReviewController]
   });
