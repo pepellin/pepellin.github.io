@@ -108,16 +108,17 @@ section {
 }
 
 .movie-div {
+    /*width: 320px*/
     width: 100%;
     height: 75px;
     overflow: hidden;
 }
 
-/*@media (min-width: 375px) {
+@media (min-width: 375px) {
   .movie-div {
-        height: 120px;
+        height: 87px;
   }    
-}*/
+}
 
 @media (min-width: 600px) {
   .movie-div {
