@@ -421,7 +421,7 @@ header h1 {
 
 /* SEP */
 #sep {
-	background: #2f2f2f;
+	background: #b3b3b3;
 	/*background: url(../img/sep.jpg) no-repeat center top;*/
 	padding-top: 90px;
 	text-align:center;
@@ -530,7 +530,7 @@ ul {
 footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background: #2f2f2f;
+	background: #b3b3b3;
 	color: white;
 }
 
@@ -545,7 +545,7 @@ footer i {
 }
 
 footer a {
-	color: #b9b9b9;
+	color: #ffffff;
 }
 
 footer a:hover {
