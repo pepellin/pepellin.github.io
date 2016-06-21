@@ -38,7 +38,8 @@ button.navbar-toggle {
 }
 
 section {
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .hovereffect {
@@ -95,6 +96,19 @@ section {
   -ms-transform: scale(1);
   transform: scale(1);*/
 }
+
+.header {
+    background-color: #b3b3b3;
+    text-align: center;
+    -webkit-transition: background-color 2s; /* Safari */
+    transition: background-color 2s;
+}
+
+.header:hover {
+    background-color: #000000;
+}
+
+
 
 .release_date {
     color: #cccccc;
