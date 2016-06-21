@@ -120,6 +120,12 @@ section {
   }    
 }
 
+@media (min-width: 414px) {
+  .movie-div {
+        height: 97px;
+  }    
+}
+
 @media (min-width: 600px) {
   .movie-div {
         height: 142px;
