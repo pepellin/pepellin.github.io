@@ -236,7 +236,7 @@ button[id="search-by-title-button submit"]:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); 
 }
 
-.searchline h2 {
+.searchline h1 {
     font-size: 3em;
     color: #ffffff;
 }
@@ -277,7 +277,7 @@ button[id="search-by-title-button submit"]:hover {
 }
 
 .headline h1 {
-    font-size: 5em;
+    font-size: 4em;
     color: #ffffff;
 }
 
