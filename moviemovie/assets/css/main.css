@@ -228,8 +228,6 @@ button[id="search-by-title-button submit"]:hover {
     -o-background-size: cover;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;  
-    overflow: hidden;
-    
 }
 
 .search-image:hover {
@@ -237,8 +235,9 @@ button[id="search-by-title-button submit"]:hover {
 }
 
 .searchline h1 {
-    font-size: 3em;
+    font-size: 4em;
     color: #ffffff;
+    text-overflow: ellipsis; 
 }
 
 .clickable {
@@ -279,6 +278,7 @@ button[id="search-by-title-button submit"]:hover {
 .headline h1 {
     font-size: 4em;
     color: #ffffff;
+    text-overflow: ellipsis; 
 }
 
 .headline h2 {
