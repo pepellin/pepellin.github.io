@@ -170,6 +170,48 @@ section {
     }
 }
 
+/*Search section*/
+
+input#searchBox {
+    font-size: 0.6em;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 3px solid #b3b3b3;
+    transition: 0.5s;
+    background: #ffffff;
+    color: #b3b3b3;
+
+}
+
+input#searchBox:focus {
+    outline-width: 0;
+    color: #ffffff;
+    background: #b3b3b3;
+}
+
+input#searchBox:hover {
+    color: #ffffff;
+    background: #b3b3b3;
+}
+
+button[id="search-by-title-button submit"] {
+    box-sizing: border-box;
+    font-size: 0.5em;
+    padding: 5px 10px;
+    color: #ffffff;
+    background: #b3b3b3;
+    border-radius: 0;
+    border: 3px solid #b3b3b3;
+}
+
+button[id="search-by-title-button submit"]:hover {
+    outline-width: 0;
+    color: #b3b3b3;
+    background: #ffffff;
+    border: 3px solid #b3b3b3;
+
+}
+
 /*movie-detail.template.html*/
 
 .centered {
