@@ -276,7 +276,7 @@ button[id="search-by-title-button submit"]:hover {
 }
 
 .headline h1 {
-    font-size: 4em;
+    font-size: 3em;
     color: #ffffff;
     text-overflow: ellipsis; 
 }
