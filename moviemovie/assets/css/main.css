@@ -217,6 +217,29 @@ button[id="search-by-title-button submit"]:hover {
     display: none;
 }
 
+.search-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;  
+    
+}
+
+.search-image:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); 
+}
+
+.searchline h1 {
+    font-size: 5em;
+    color: #ffffff;
+}
+
 /*movie-detail.template.html*/
 
 .centered {
@@ -232,8 +255,8 @@ button[id="search-by-title-button submit"]:hover {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;  
 }
 
 .header-image:hover {
@@ -256,10 +279,6 @@ button[id="search-by-title-button submit"]:hover {
 .headline h2 {
     font-size: 2em;
     color: #ffffff;
-}
-
-.headline h1:hover, .headline h2:hover {
-    /*color: #*/
 }
 
 .vote-count {

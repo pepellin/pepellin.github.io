@@ -12,47 +12,61 @@
 <!-- /.row -->
 
 <!-- Projects Row -->
-    <div class="row">
-        <div class="col-md-12 header-image" style="background-image:url(http://image.tmdb.org/t/p/w1920{{$ctrl.movieInfo.backdrop_path}});">
-            <div class="headline" id="no-display">
-                    <h1>{{$ctrl.movieInfo.title}}</h1>
-            </div>
+<div class="row">
+    <div class="col-md-12 search-image" data-toggle="modal" data-target="#myModal" style="background-image:url(http://image.tmdb.org/t/p/w1920{{$ctrl.movieInfo.backdrop_path}});">
+        <div class="searchline" id="no-display">
+            <h1>{{$ctrl.movieInfo.title}}</h1>
         </div>
-        <!--<div class="col-lg-12">
-            <h1 class="page-header">
-                {{$ctrl.movieInfo.title}}
-            </h1>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 movie-info">
-            <img class="img-responsive" ng-src="http://image.tmdb.org/t/p/w370/{{$ctrl.movieInfo.poster_path}}" alt="{{$ctrl.movieInfo.title}}" />
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 movie-info">
-            <table class="table table-hover no-thead">
-                <thead class="thead-default">
-                    <tr>
-                    <th colspan="2">
-                        <span class="vote-average">{{$ctrl.movieInfo.vote_average}} / 10</span>
-                        <span class="vote-count">{{$ctrl.movieInfo.vote_count | number}} votes</span>
-                    </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <th scope="row">Overview</th>
-                    <td>{{$ctrl.movieInfo.overview}}</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">Language</th>
-                    <td>{{$ctrl.movieInfo.original_language}}</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">Production Country</th>
-                    <td>US</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">Release Date</th>
-                    <td>{{$ctrl.movieInfo.release_date}}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>-->
     </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="centered modal-title" id="myModalLabel">{{$ctrl.movieInfo.title}}</h4>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 movie-info">
+                <img class="img-responsive" ng-src="http://image.tmdb.org/t/p/w370/{{$ctrl.movieInfo.poster_path}}" alt="{{$ctrl.movieInfo.title}}" title="{{$ctrl.movieInfo.title}}"/>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 movie-info">
+                <table class="table table-hover no-thead">
+                    <thead class="thead-default">
+                        <tr>
+                        <th colspan="2">
+                            <span class="vote-average">{{$ctrl.movieInfo.vote_average}} / 10</span>
+                            <span class="vote-count">{{$ctrl.movieInfo.vote_count | number}} votes</span>
+                        </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <th scope="row">Overview</th>
+                        <td>{{$ctrl.movieInfo.overview}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">Language</th>
+                        <td>{{$ctrl.movieInfo.original_language}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">Production Country</th>
+                        <td>US</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">Release Date</th>
+                        <td>{{$ctrl.movieInfo.release_date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
