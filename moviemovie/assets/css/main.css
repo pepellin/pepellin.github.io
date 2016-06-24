@@ -240,6 +240,10 @@ button[id="search-by-title-button submit"]:hover {
     color: #ffffff;
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 /*movie-detail.template.html*/
 
 .centered {
