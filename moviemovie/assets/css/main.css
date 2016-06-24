@@ -97,14 +97,14 @@ section {
   transform: scale(1);*/
 }
 
-.header {
+header {
     background-color: #b3b3b3;
     text-align: center;
     -webkit-transition: background-color 2s; /* Safari */
     transition: background-color 2s;
 }
 
-.header:hover {
+header:hover {
     background-color: #000000;
 }
 
@@ -127,6 +127,7 @@ section {
     height: 75px;
     overflow: hidden;
 }
+
 
 @media (min-width: 375px) {
   .movie-div {
@@ -212,6 +213,10 @@ button[id="search-by-title-button submit"]:hover {
 
 }
 
+#no-display {
+    display: none;
+}
+
 /*movie-detail.template.html*/
 
 .centered {
@@ -227,10 +232,15 @@ button[id="search-by-title-button submit"]:hover {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+.header-image:hover {
     -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
     -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
     -webkit-filter: grayscale(100%);
-    filter: #ffffff;
+    filter: #000000;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 }
 
