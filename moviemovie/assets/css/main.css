@@ -260,7 +260,6 @@ button[id="search-by-title-button submit"]:hover {
     background-size: cover;
     -o-background-size: cover;
     -webkit-transition: all 0.2s ease-in;
-    box-sizing: border-box;
 }
 
 .header-image:hover {
